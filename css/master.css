@@ -1,0 +1,54 @@
+body{
+  background-color: #efefef;
+  padding-top: 1rem;
+}
+.container{
+  background-color: #ffffff;
+  border-radius: 8px;
+  border: 1px solid #ffffff;
+  padding: 1rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+ul{
+  list-style-type: none;
+}
+p{
+  overflow-wrap: break-word;
+}
+.show-when-small, .show-when-xsmall{
+  display: none;
+}
+.name>h1{
+  font-weight: lighter;
+  font-size: 2rem;
+}
+@media (min-width: 1200px)
+.container {
+    max-width: 1180px;
+}
+@media (max-width:768px) {
+  .show-when-small{
+    display: block;
+  }
+  .hide-when-small{
+    display: none;
+  }
+  legend{
+    font-weight: lighter;
+  }
+  h1{
+    font-weight: 400;
+  }
+  p{
+    font-size: 0.8rem;
+    letter-spacing: 0.1em;
+  }
+}
+@media (max-width:450px){
+  .show-when-xsmall{
+    display: block;
+  }
+  .hide-when-xsmall{
+    display: none;
+  }
+}

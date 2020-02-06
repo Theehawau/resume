@@ -1,0 +1,381 @@
+body{
+  font-family: 'Barriecito', cursive;
+font-family: 'Raleway', sans-serif;
+font-family: 'Merriweather', serif;
+font-family: 'Roboto Mono', monospace;
+background-color: #EFEFEF;
+color: #181818;
+}
+
+.home{
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url('../img/622382.jpg');
+  color: white;
+}
+.home h1{
+  font-family: 'Hanalei', cursive;
+  font-size: 150px;
+  color: white;
+}
+p{
+  font-family: 'Merriweather', serif;
+  font-size: 1rem;
+  line-height: 2;
+}
+.about{
+  height: 90vh;
+  background-color: #87d6de;
+  background: url('../img/test.jpg');
+  color:#EFEFEF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.about-data p img{
+  max-width: 10rem;
+}
+.about p, .home p{
+  font-family: 'Roboto Mono', monospace;
+  font-size: large;
+}
+.Services-info{
+  background: url("../img/test4.jpg");
+}
+.logo h6{
+  border-left: 2px solid #63ecba;
+  border-radius: 0 60px 60px 0;
+  background-color: #599adc;
+  width: fit-content;
+  padding: 6px 12px;
+  font-size: 2em;
+}
+.portfolio-info p{
+  font-family: 'Roboto Mono', monospace;
+}
+.portfolio-images{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.portfolio-images img{
+  height: -webkit-fill-available;
+  height: auto;
+  max-height: 200px;
+}
+.Services-data{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+}
+.S-data h4{
+  font-family: 'Raleway', sans-serif;
+}
+.Contact-info{
+  display: grid;
+  grid-template-columns: repeat(2,1fr)
+}
+.Contact-news h5{
+  font-family: 'Raleway', sans-serif;
+  font-size: 2em;
+  color: #25a7f6;
+}
+.test:hover{
+   transform: skew(10deg);
+   animation: shake 2s infinite;
+   animation-direction: alternate;
+}
+@keyframes shake {
+  0% {
+    transform: skew(10deg);
+  }
+  100% {
+    transform: skew(-10deg);
+  }
+}
+textarea:focus{
+  border-color: #87d6de;
+}
+.Submit{
+  background: #87d6de;
+  border-radius: 60px;
+  border: 1px solid #87d6de;
+}
+.email{
+  width: 80%;
+  background-color: #87d6de;
+  border: 1px solid beige;
+  border-radius: 4px;
+  outline: none;
+}
+.signup{
+  margin: -5%;
+  background-color: #0e8db3;
+  border: 2px solid #1b4273;
+  z-index: 2;
+  border-radius: 2px;
+}
+.footer{
+  display: grid;
+  grid-template-columns: 1fr repeat(3,1fr);
+  font-size: 1em;
+  color: white;
+}
+.f1{
+  display: flex;
+  align-items: center;
+}
+.f1 h2{
+  color: #25a7f6;
+  font-size: 2em;
+  font-family: 'Raleway', sans-serif;
+}
+.f2 h6{
+  color: #25a7f6;
+  text-decoration: underline;
+}
+.f2 p{
+  font-size: 1em;
+}
+.footer2 p{
+  font-size: 1em;
+  color: white;
+}
+.Contact-email  input{
+  width: 70%;
+  outline: none;
+  margin: 0.5em;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  background-color: #EFEFEF;
+  border-bottom-color: #b1e8e1;
+}
+.Contact-email input[type=submit]{
+  width: 30%;
+  background-color: #0e8db3;
+  border: 2px solid #1b4273;
+}
+.Contact-email input:focus {
+  border-bottom-color: #87d6de;
+}
+.Contact-email textarea{
+  width: 70%;
+  margin: 0.5em;
+  outline: none;
+  border-width: 2px;
+  border-style: solid;
+  border-color:#b1e8e1;
+  background-color: #EFEFEF;
+}
+.Contact-email textarea:focus {
+  border-color: #87d6de;
+}
+.ss{
+  background-color: #c6d0dacf;
+}
+.ss1{
+    background-color: #c6d0dacf;
+}
+.f1 img{
+  max-height: 100px;
+  max-width: 250px;
+}
+.menu{
+  justify-content: center;
+  display: flex;
+  font-family: 'Raleway', sans-serif;
+  background: #87b2de;
+  opacity: 0.7;
+}
+.menu ul{
+  list-style-type: none;
+  display: flex;
+  margin-bottom: 0;
+}
+.menu li{
+  padding: 0.5rem;
+}
+.menu li > a{
+  color:#e68406;
+}
+@media  ( max-width : 800px)  {
+  .home,.about{
+    height: 70vh;
+  }
+  .home h1{
+    font-family: 'Hanalei', cursive;
+    font-size: 3rem;
+  }
+  .about{
+    font-size: small;
+  }
+  .home img{
+    max-width: 400px;
+  }
+  .about-data p img{
+    max-width: 7rem;
+  }
+  .logo h6{
+    font-size: 2rem;
+  }
+  p{
+    font-size: 1rem;
+  }
+  .Contact-info{
+    display: grid;
+    grid-template-columns: repeat(1,1fr)
+  }
+  .Contact-news{
+    text-align: center;
+  }
+  .f2 h6{
+    font-size: large;
+  }
+
+  .ss1{
+    background-color: inherit;
+  }
+  .ss2{
+      background-color: #c6d0dacf;
+  }
+  .S-data{
+    font-size: small;
+  }
+  .footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    font-size: small;
+  }
+  .Services-data{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+  }
+}
+
+/* for iphone */
+
+@media
+   (min-width: 320px)
+  and (max-width: 480px)
+   {
+     .home{
+       padding: 1em;
+     }
+    .home,.about{
+      height: 450px;
+    }
+    .home img{
+      max-width: 250px;
+    }
+    .ss1{
+      background-color: inherit;
+    }
+    .ss2{
+        background-color: #c6d0dacf;
+    }
+    .about{
+      font-size: xx-small;
+      line-height: 1;
+    }
+
+    .test{
+      margin: .25rem!important;
+    }
+    .test:hover{
+       transform: skew(2deg);
+       animation: shake 2s infinite;
+       animation-direction: alternate;
+    }
+    @keyframes shake {
+      0% {
+        transform: skew(2deg);
+      }
+      100% {
+        transform: skew(-2deg);
+      }
+    }
+    .pr-5{
+        padding: 1rem!important;
+    }
+    .signup{
+      margin: -9%;
+    }
+    .p-5{
+        padding: 1rem!important;
+    }
+    .S-data{
+      padding: 0.5rem!important;
+    }
+    .logo h6{
+      font-size: 1rem;
+    }
+    .menu ul{
+      padding-left: 0px;
+    }
+    .menu li{
+      padding: 0.2rem;
+      font-size: 0.8rem;
+    }
+    .webdev{
+      max-width: 300px;
+    }
+    p{
+      font-size: 1rem;
+      text-align: justify;
+    }
+    .Contact-email input, .Contact-email textarea{
+      width: 100%;
+    }
+    .Contact-info{
+      display: grid;
+      grid-template-columns: repeat(1,1fr)
+    }
+    .Contact-news{
+      text-align: center;
+    }
+    .f2{
+      line-height: 1;
+    }
+    .f2 h6{
+      font-size: 1rem;
+    }
+    .f2 p{
+      font-size: 0.75rem;
+      line-height: 1;
+      letter-spacing: 0.1rem;
+    }
+    .S-data{
+      font-size: small;
+      padding-left: 0.5rem 0.5rem;
+
+    }
+    .portfolio-images img{
+      max-width: 290px;
+    }
+    .S-data p{
+      text-align: center;
+      margin-right: 1rem
+    }
+    .findus{
+      text-align: left;
+    }
+    .S-img img{
+      max-width: 280px;
+    }
+    .footer{
+      display: grid;
+      grid-template-columns: 1fr;
+      font-size: small;
+    }
+    .footer2 p{
+      font-size: 0.7rem;
+      text-align: left;
+      letter-spacing: 0.1rem;
+    }
+    .Services-data{
+      display: grid;
+      grid-template-columns: repeat(1,1fr);
+    }
+}
